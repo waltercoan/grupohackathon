@@ -1,0 +1,22 @@
+{
+  "name": "nodehackthon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Walter Coan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltercoan/grupohackathon.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-generator": "^4.13.4",
+    "express-handlebars": "^3.0.0"
+  }
+}
