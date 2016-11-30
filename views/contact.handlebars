@@ -1,0 +1,26 @@
+<div class="page-header">
+  <h3>Contatos</h3>
+
+  <a href="/contact/add">Novo Contato</a>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each data}}
+      <tr>
+      	<td>{{this.name}}</td>
+      	<td>{{this.email}}</td>
+      	<td>{{this.phone}}</td>
+      	<td><a href="/contact/update?id={{this.id}}">Alterar</a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,24 @@
+<div class="page-header">
+  <h3>Detalhe do Contato</h3>
+</div>
+<form method="POST" action="/contact/save">
+  
+  <input type="hidden" name="id" value="{{data.id}}"/>
+
+  <div class="form-group">
+    <label for="name">Nome:</label>
+    <input type="text" class="form-control" 
+        id="name" name="name" value="{{data.name}}">
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" 
+      id="email" name="email" value="{{data.email}}">
+  </div>
+  <div class="form-group">
+    <label for="phone">Telefone:</label>
+    <input type="text" class="form-control" 
+        id="phone" name="phone"  value="{{data.phone}}">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
